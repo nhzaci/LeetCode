@@ -6,24 +6,13 @@ class ListNode:
 
 
 class Solution:
-    '''
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        final_node = ListNode(l1.val + l2.val)
-        first_node_pointer = final_node
-        carry = 0
-        while not l1.next is None and not l2.next is None:
-            next_l1_val = l1.next.val if not l1.next is None else 0
-            next_l2_val = l2.next.val if not l2.next is None else 0
-            final_node.next = ListNode(
-                (next_l1_val + next_l2_val + carry) % 10)
-            carry = (next_l1_val + next_l2_val + carry) // 10
-            l1 = l1.next
-            l2 = l2.next
-            final_node = final_node.next
-        return first_node_pointer
-    '''
-
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        '''
+        Create list of nodes with a sum and a carry
+        For each sum, add the carry in and check if its greater than 10
+        If greater than 10, carry over to the next carry
+        Lastly if the loop has ended and carry != 0, add it to last node
+        '''
         # create the first list nodes with values
         first_sum = (l1.val + l2.val) % 10
         # initialise the first carry value
