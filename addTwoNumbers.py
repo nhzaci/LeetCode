@@ -12,6 +12,7 @@ class Solution:
         For each sum, add the carry in and check if its greater than 10
         If greater than 10, carry over to the next carry
         Lastly if the loop has ended and carry != 0, add it to last node
+        Time Complexity: O(n)
         '''
         # create the first list nodes with values
         first_sum = (l1.val + l2.val) % 10

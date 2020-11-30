@@ -4,7 +4,6 @@ class Solution:
         Use a hashtable storing an array of indices with keys being the value of item in nums
         If there are more than one key in the array, use the key that is not equal to the current index
         Time complexity: O(n)
-        Space complexity: O(n)
         '''
         # initialize dictionary
         hashtable = {}
