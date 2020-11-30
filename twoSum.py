@@ -7,11 +7,14 @@ class Solution:
         '''
         # initialize dictionary
         hashtable = {}
+
+        # init hashtable
         for (index, item) in enumerate(nums):
             if item in hashtable:
                 hashtable[item].append(index)
             else:
                 hashtable[item] = [index]
+
         # check if difference between sum and target can be found on hash table
         for (index, item) in enumerate(nums):
             diff = target - item

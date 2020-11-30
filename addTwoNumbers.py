@@ -16,11 +16,12 @@ class Solution:
         '''
         # create the first list nodes with values
         first_sum = (l1.val + l2.val) % 10
+
         # initialise the first carry value
         carry = (l1.val + l2.val) // 10
         final_node = ListNode(first_sum)
         first_node_pointer = final_node
-        i = 0
+
         # for subsequent ones, while not last, continue initialising the values
         while not l1.next is None or not l2.next is None:
             next_l1_val = l1.next.val if not l1.next is None else 0
@@ -31,9 +32,10 @@ class Solution:
             l1 = l1.next if not l1.next is None else ListNode(0)
             l2 = l2.next if not l2.next is None else ListNode(0)
             final_node = final_node.next
-            i += 1
+
         if carry != 0:
             final_node.next = ListNode(carry)
+
         return first_node_pointer
 
 
