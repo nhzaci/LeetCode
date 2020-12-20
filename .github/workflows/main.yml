@@ -32,13 +32,13 @@ jobs:
         run: python3 ./generate_readme.py
       - name: switching from HTTPS to SSH
         run: git remote set-url origin ${{ secrets.ssh }}
-      - name: check for changes
-        run: git status
-      - name: stage changed files
-        run: git add .
-      - name: commit changed files
-        run: git commit -m "generating new README.md"
-      - name: fetch from master
-        run: git fetch origin master
-      - name: push code to master
-        run: git push origin HEAD:master
+      - name: setting up config and committing
+        run: |
+          git config --local user.name "nhzaci"
+          git add .
+          git commit -m "generating new README.md"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
