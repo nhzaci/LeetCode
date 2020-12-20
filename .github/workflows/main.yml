@@ -34,4 +34,4 @@ jobs:
         with:
           python-version: "3.x"
       - name: Generate README.md
-        run: python3 generate_readme.py
+        run: python3 ./generate_readme.py
