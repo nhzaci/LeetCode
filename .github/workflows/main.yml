@@ -27,6 +27,6 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: echo filepath
-        run: echo pwd
+        run: pwd
       - name: Generate README.md
         run: python3 ../../A.GenerateReadme.py
