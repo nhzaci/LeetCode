@@ -26,5 +26,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
+      - name: echo filepath
+        run: echo pwd
       - name: Generate README.md
         run: python3 ../../A.GenerateReadme.py
