@@ -28,5 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: echo filepath
         run: pwd
+      - name: Setup Python
+        uses: actions/setup-python@v2
       - name: Generate README.md
-        run: python3 ../../A.GenerateReadme.py
+        run: python3 ../A.GenerateReadme.py
