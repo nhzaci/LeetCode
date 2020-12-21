@@ -14,6 +14,7 @@ Welcome to the repository of my LeetCode solutions
 | [Distribute Candies](https://github.com/nhzaci/LeetCode/blob/master/distribute-candies.py) | Python |
 | [Fibonacci Number](https://github.com/nhzaci/LeetCode/blob/master/fibonacci-number.py) | Python |
 | [Generate Parentheses](https://github.com/nhzaci/LeetCode/blob/master/generate-parentheses.py) | Python |
+| [Kth Largest](https://github.com/nhzaci/LeetCode/blob/master/kth-largest.py) | Python |
 | [Letter Combinations Of Phone Number](https://github.com/nhzaci/LeetCode/blob/master/letter-combinations-of-phone-number.py) | Python |
 | [License Key Formatting](https://github.com/nhzaci/LeetCode/blob/master/license-key-formatting.py) | Python |
 | [Longest Absolute File Path](https://github.com/nhzaci/LeetCode/blob/master/longest-absolute-file-path.py) | Python |
