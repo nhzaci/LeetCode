@@ -2,7 +2,7 @@
 
 Welcome to the repository of my LeetCode solutions
 
-## Completed Problems
+##48Completed Problems
 
 | Problem | Language |
 | --- | --- |
