@@ -23,6 +23,23 @@ class Solution:
                     if idx != index:
                         return [index, idx]
 
+    def twoSum2(self, nums, target: int):
+        '''
+        Second solution 
+        Time: O(n log n) -> Merge sort time complexity
+        '''
+        nums.sort()
+        left, right = 0, len(nums) - 1
+
+        while left < right:
+            curr_sum = nums[left] + nums[right]
+
+            if curr_sum < target:
+                right -= 1
+            elif curr_sum > target:
+                left += 1
+            else:
+                return [left, right]
 
 if __name__ == '__main__':
     solution = Solution()
