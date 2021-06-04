@@ -1,9 +1,7 @@
 # LeetCode Solutions
 
 Welcome to the repository of my LeetCode solutions
-Currently contains 48 solutions!
-
-##Completed Problems: 
+## Completed Problems: 48 
 
 | Problem | Language |
 | --- | --- |
