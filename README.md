@@ -2,7 +2,7 @@
 
 Welcome to the repository of my LeetCode solutions
 
-##48Completed Problems
+##Completed Problems: 48
 
 | Problem | Language |
 | --- | --- |
