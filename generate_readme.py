@@ -7,8 +7,7 @@ file_count = len(file_list)
 with open('README.md', 'w') as f:
     f.write('# LeetCode Solutions\n\n')
     f.write('Welcome to the repository of my LeetCode solutions\n')
-    f.write(f'Currently contains {file_count} solutions!\n\n')
-    f.write('##Completed Problems: \n\n')
+    f.write(f'## Completed Problems: {file_count} \n\n')
     f.write('| Problem | Language |\n')
     f.write('| --- | --- |\n')
     for qn in file_list:
