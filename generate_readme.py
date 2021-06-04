@@ -6,7 +6,7 @@ file_list = sorted(list(
 with open('README.md', 'w') as f:
     f.write('# LeetCode Solutions\n\n')
     f.write('Welcome to the repository of my LeetCode solutions\n\n')
-    f.write(f'##{len(file_list)}Completed Problems\n\n')
+    f.write(f'##Completed Problems: {len(file_list)}\n\n')
     f.write('| Problem | Language |\n')
     f.write('| --- | --- |\n')
     for qn in file_list:
