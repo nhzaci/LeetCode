@@ -9,7 +9,9 @@ Welcome to the repository of my LeetCode solutions
 | [Add Two Numbers](https://github.com/nhzaci/LeetCode/blob/master/add-two-numbers.py) | Python |
 | [Array Partition I](https://github.com/nhzaci/LeetCode/blob/master/array-partition-i.py) | Python |
 | [Array With Stack Operations](https://github.com/nhzaci/LeetCode/blob/master/array-with-stack-operations.py) | Python |
+| [Best Time To Buy And Sell Stock](https://github.com/nhzaci/LeetCode/blob/master/best-time-to-buy-and-sell-stock.py) | Python |
 | [Combination Sum](https://github.com/nhzaci/LeetCode/blob/master/combination-sum.py) | Python |
+| [Contains Duplicate](https://github.com/nhzaci/LeetCode/blob/master/contains-duplicate.py) | Python |
 | [Custom Sort String](https://github.com/nhzaci/LeetCode/blob/master/custom-sort-string.py) | Python |
 | [Distribute Candies](https://github.com/nhzaci/LeetCode/blob/master/distribute-candies.py) | Python |
 | [Fibonacci Number](https://github.com/nhzaci/LeetCode/blob/master/fibonacci-number.py) | Python |
