@@ -17,6 +17,24 @@ class Solution:
         build(n, n, '')
         return list(set(res))
 
+    # added dfs way of doing this in my second try
+    def generateParenthesisDfs(self, n: int) -> List[str]:
+        def dfs(results, acc, no_open, no_close):
+            if no_open == 0 and no_close == 0:
+                results.append(acc)
+                return
+            if no_close < 0 or no_open < 0:
+                return
+            if no_open == no_close:
+                dfs(results, acc + '(', no_open - 1, no_close)
+            else:
+                dfs(results, acc + ')', no_open, no_close - 1)
+                dfs(results, acc + '(', no_open - 1, no_close)
+
+        results = []
+        dfs(results, '', n, n)
+        return results
+
 
 soln = Solution()
 print(soln.generateParenthesis(4))

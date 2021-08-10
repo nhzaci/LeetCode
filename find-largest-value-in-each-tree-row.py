@@ -8,6 +8,7 @@ class Solution:
     def largestValues(self, root: TreeNode) -> List[int]:
         NEG_INF = -math.inf
         largest = {}
+
         def traverse(node, level=0):
             nonlocal largest
             if not node:
@@ -23,4 +24,22 @@ class Solution:
                     traverse(node.left, level + 1)
         traverse(root)
         return largest.values()
-        
+
+    # second attempt at doing this
+    def largestValues2(self, root: Optional[TreeNode]) -> List[int]:
+        def traverse(root, level, memo):
+            if root == None:
+                return
+            if root.val != None:
+                if level in memo:
+                    memo[level] = max(memo[level], root.val)
+                else:
+                    memo[level] = root.val
+            if root.left != None:
+                traverse(root.left, level + 1, memo)
+            if root.right != None:
+                traverse(root.right, level + 1, memo)
+
+        memo = {}
+        traverse(root, 0, memo)
+        return list(memo.values())
